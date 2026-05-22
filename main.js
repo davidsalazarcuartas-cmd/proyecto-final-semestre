@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    
+
     const nav = document.getElementById('nav');
 
     window.addEventListener('scroll', () => {
@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-  
+
     const navToggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
 
-   
+
     let mobileNav = document.querySelector('.mobile-nav');
     if (!mobileNav) {
         mobileNav = document.createElement('div');
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         document.body.appendChild(mobileNav);
 
-       
+
         mobileNav.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileNav.classList.remove('active');
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-       
+
         mobileNav.querySelector('.mobile-nav-close').addEventListener('click', () => {
             mobileNav.classList.remove('active');
             document.body.style.overflow = '';
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
@@ -67,17 +67,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-   
+
     const revealElements = document.querySelectorAll(
         '.section-header, .cafe-grid, .products-grid, .why-grid, ' +
         '.history-layout, .methods-grid, .storage-box, .contact-layout, ' +
         '.product-card, .why-card, .method-card, .contact-block'
     );
 
-   
+
     revealElements.forEach((el, index) => {
         el.classList.add('reveal');
-       
+
         const children = el.querySelectorAll('.product-card, .why-card, .method-card, .contact-block');
         children.forEach((child, i) => {
             child.classList.add('reveal', `reveal-delay-${(i % 4) + 1}`);
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(el);
     });
 
-   
+
     const heroContent = document.querySelector('.hero-content');
 
     window.addEventListener('scroll', () => {
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    
+
     const eyebrow = document.querySelector('.hero-eyebrow');
     if (eyebrow) {
         const text = eyebrow.textContent;
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeWriter, 500);
     }
 
-    
+
     const stats = document.querySelectorAll('.stat-number');
 
     const statsObserver = new IntersectionObserver((entries) => {
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const hasLetter = /[a-zA-Z]/.test(finalText);
 
                 if (hasLetter) {
-                    
+
                     statsObserver.unobserve(el);
                     return;
                 }
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     stats.forEach(stat => statsObserver.observe(stat));
 
-    
+
     const productCards = document.querySelectorAll('.product-card');
 
     productCards.forEach(card => {
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    
+
     const sections = document.querySelectorAll('section[id]');
     const navLinksAll = document.querySelectorAll('.nav-links a');
 
