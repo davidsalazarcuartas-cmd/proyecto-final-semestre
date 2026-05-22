@@ -1,1 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aromas del Baché — 100% Colombiano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+     NAVEGACIÓN                                   
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#inicio" class="nav-logo">
+                <span class="nav-logo-icon"></span>
+                <span class="nav-logo-text">Aromas del Baché</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cafe">Nuestro Café</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#preparacion">Preparación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+   
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <div class="hero-grain"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">Santa María, Huila — Colombia</p>
+            <h1 class="hero-title">
+                <span class="line">Aromas que</span>
+                <span class="line">nacen del <em>Baché</em></span>
+            </h1>
+            <p class="hero-subtitle">Café suave de las tierras fértiles del Huila</p>
+            <p class="hero-desc">Un café conocido por sus notas frescas y vibrantes que evocan la esencia de las frutas maduras, cultivado en las montañas volcánicas del municipio de Santa María.</p>
+            <div class="hero-actions">
+                <a href="#cafe" class="btn btn-primary">Conoce más de nuestro proceso</a>
+                <a href="#productos" class="btn btn-outline">Ver productos</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span class="hero-scroll-line"></span>
+            <span class="hero-scroll-text">Scroll</span>
+        </div>
+    </section>
+
+    
+    <section class="section section-cafe" id="cafe">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Origen Certificado</span>
+                <h2 class="section-title">Nuestro Café</h2>
+            </div>
+
+            <div class="cafe-grid">
+                <div class="cafe-visual">
+                    <div class="cafe-image-box">
+                        <div class="cafe-image-placeholder">
+                            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M100 20C60 20 30 50 30 85C30 115 50 135 70 145V160C70 170 80 180 100 180C120 180 130 170 130 160V145C150 135 170 115 170 85C170 50 140 20 100 20Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M70 100C70 100 85 115 100 115C115 115 130 100 130 100" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M85 70C85 70 95 80 100 80C105 80 115 70 115 70" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <circle cx="100" cy="55" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M60 160L50 190M140 160L150 190" stroke="currentColor" stroke-width="2"/>
+                                <text x="100" y="105" text-anchor="middle" font-size="10" fill="currentColor" font-family="serif">100%</text>
+                            </svg>
+                            <p class="cafe-image-caption">Montañas Volcánicas<br>Santa María, Huila</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cafe-content">
+                    <h3 class="cafe-heading">Café de origen certificado<br><strong>100% Colombiano</strong></h3>
+                    <p class="cafe-text">Directo desde las fincas de Santa María, Huila — donde el río Baché riega tierras fértiles y volcánicas que dan vida a un grano excepcional.</p>
+
+                    <div class="cafe-stats">
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Café Colombiano</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number">500g</span>
+                            <span class="stat-label">Peso neto</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Métodos de prep.</span>
+                        </div>
+                    </div>
+
+                    <p class="cafe-text cafe-text--secondary">Este café suave es conocido por sus notas frescas y vibrantes que evocan la esencia de las frutas frescas y maduras, desarrollándose plenamente en el paladar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section section-products" id="productos">
+        <div class="container">
+            <div class="section-header section-header--center">
+                <span class="section-eyebrow">Catálogo</span>
+                <h2 class="section-title">Nuestros Productos</h2>
+                <p class="section-subtitle">Cada método resalta facetas distintas del café. Elige el tuyo.</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <article class="product-card">
+                    <div class="product-visual">
+                        <div class="product-icon">
+                            <svg viewBox="0 0 80 80" fill="none">
+                                <ellipse cx="40" cy="70" rx="25" ry="5" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M25 70V35C25 25 30 15 40 15C50 15 55 25 55 35V70" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <path d="M30 40H50M30 50H50M30 60H50" stroke="currentColor" stroke-width="1"/>
+                                <path d="M35 15V10M45 15V10" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <span class="product-tag product-tag--highlight">Tostión a elegir</span>
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-name">Café Molido Fino</h3>
+                        <p class="product-desc">Perfecto para Drip Coffee y espresso. Molienda fina que resalta notas frutales y frescas.</p>
+                        <div class="product-meta">
+                            <span class="product-weight">Bolsa 500g</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 2 -->
+                <article class="product-card product-card--featured">
+                    <div class="product-visual product-visual--dark">
+                        <div class="product-icon product-icon--light">
+                            <svg viewBox="0 0 80 80" fill="none">
+                                <circle cx="40" cy="40" r="28" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <circle cx="40" cy="40" r="20" stroke="currentColor" stroke-width="1" fill="none"/>
+                                <line x1="40" y1="12" x2="40" y2="20" stroke="currentColor" stroke-width="1.5"/>
+                                <line x1="40" y1="60" x2="40" y2="68" stroke="currentColor" stroke-width="1.5"/>
+                                <line x1="12" y1="40" x2="20" y2="40" stroke="currentColor" stroke-width="1.5"/>
+                                <line x1="60" y1="40" x2="68" y2="40" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="40" cy="40" r="3" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <span class="product-tag product-tag--green">100% Natural</span>
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-name">Café en Grano</h3>
+                        <p class="product-desc">Grano entero para moler en casa según tu método favorito. Conserva el aroma hasta el último momento.</p>
+                        <div class="product-meta">
+                            <span class="product-weight">Bolsa 500g</span>
+                        </div>
+                    </div>
+                </article>
+
+              
+                <article class="product-card">
+                    <div class="product-visual product-visual--warm">
+                        <div class="product-icon">
+                            <svg viewBox="0 0 80 80" fill="none">
+                                <path d="M20 60V30C20 20 28 12 40 12C52 12 60 20 60 30V60" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <path d="M20 60H60" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M25 60V65C25 70 30 75 40 75C50 75 55 70 55 65V60" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <line x1="30" y1="25" x2="30" y2="50" stroke="currentColor" stroke-width="1"/>
+                                <line x1="40" y1="20" x2="40" y2="50" stroke="currentColor" stroke-width="1"/>
+                                <line x1="50" y1="25" x2="50" y2="50" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <span class="product-tag product-tag--accent">Favorito</span>
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-name">Café Molido Medio</h3>
+                        <p class="product-desc">Ideal para French Press y Chemex. Equilibrio perfecto entre cuerpo y fragancia. Disponible en tostión media u oscura.</p>
+                        <div class="product-meta">
+                            <span class="product-weight">Bolsa 500g</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section-why">
+        <div class="container">
+            <div class="section-header section-header--center">
+                <span class="section-eyebrow">Diferenciadores</span>
+                <h2 class="section-title">¿Por qué elegirnos?</h2>
+                <p class="section-subtitle">Lo que hace único a nuestro café</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="20" r="12" stroke="currentColor" stroke-width="1.5"/><path d="M24 8V4M24 36V32M8 20H4M44 20H40M12 8L9 5M36 8L39 5M12 32L9 35M36 32L39 35" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="20" r="4" fill="currentColor"/></svg>
+                    </div>
+                    <h3 class="why-title">Origen único</h3>
+                    <p class="why-text">Cultivado en Santa María, Huila — tierra volcánica y fértil bañada por el río Baché, cuyo nombre en Quechua significa "Arroyo de Tierra".</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M24 4C14 4 8 14 8 24C8 34 14 44 24 44C34 44 40 34 40 24C40 14 34 4 24 4Z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M18 28C18 28 20 32 24 32C28 32 30 28 30 28" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="20" r="2" fill="currentColor"/><circle cx="30" cy="20" r="2" fill="currentColor"/><path d="M24 36L20 40H28L24 36Z" fill="currentColor"/></svg>
+                    </div>
+                    <h3 class="why-title">Perfil suave y frutal</h3>
+                    <p class="why-text">Notas frescas y vibrantes que evocan frutas frescas y maduras. Un café de taza limpia, baja acidez y aroma excepcional.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L28 16H40L30 24L34 36L24 28L14 36L18 24L8 16H20L24 4Z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M24 12V20M24 28V36" stroke="currentColor" stroke-width="1"/></svg>
+                    </div>
+                    <h3 class="why-title">Bolsa biodegradable</h3>
+                    <p class="why-text">Empaque 60% biodegradable impreso sobre papel reciclante derivado de la caña de azúcar. Sabor consciente con el planeta.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><circle cx="16" cy="24" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="32" cy="24" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M24 16V32" stroke="currentColor" stroke-width="1.5"/><path d="M20 20H28M20 28H28" stroke="currentColor" stroke-width="1"/></svg>
+                    </div>
+                    <h3 class="why-title">Directo del productor</h3>
+                    <p class="why-text">Sin intermediarios. Compramos directamente a las familias cafeteras de Santa María, garantizando frescura y precio justo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section section-history" id="historia">
+        <div class="container">
+            <div class="section-header section-header--center">
+                <span class="section-eyebrow">Tradición</span>
+                <h2 class="section-title">Nuestra Historia</h2>
+                <p class="section-subtitle">Nació en el río, creció en la montaña</p>
+            </div>
+
+            <div class="history-layout">
+                <!-- Columna izquierda: Historia + Símbolo -->
+                <div class="history-main">
+                    <div class="history-block">
+                        <h3 class="history-heading">En el municipio de Santa María, Huila</h3>
+                        <p class="history-text">Nace nuestro café <strong>Aromas del Baché</strong>, haciendo honor al río que lo recorre. Es un café suave, conocido por sus notas frescas y vibrantes que evocan la esencia de las frutas frescas y maduras, desarrollándose plenamente en el paladar.</p>
+                    </div>
+
+                    <div class="symbol-block">
+                        <div class="symbol-icon">
+                            <svg viewBox="0 0 60 60" fill="none">
+                                <path d="M30 5C15 5 5 15 5 30C5 45 15 55 30 55C45 55 55 45 55 30C55 15 45 5 30 5Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <path d="M30 15V25M30 35V45M15 30H25M35 30H45" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="30" cy="30" r="5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h4 class="symbol-title">El Símbolo del Baché</h4>
+                        <p class="symbol-text">El término <strong>BACHÉ</strong> es de origen Chibcha y en lengua Quechua significa <strong>"Arroyo de Tierra"</strong>. De estas tierras fértiles y volcánicas se nutren las raíces de este café, aportando en taza un sabor y aroma excepcionales.</p>
+                    </div>
+                </div>
+
+                
+                <div class="history-side">
+                    <div class="plant-block">
+                        <h4 class="plant-title">🌿 La planta detrás del sabor</h4>
+                        <p class="plant-intro">El árbol o arbusto del café (Coffea) es una planta tropical perenne de la familia de las rubiáceas, originaria de Etiopía. Sus frutos, conocidos como "cerezas de café", contienen en su interior las semillas que, después de ser tostadas y molidas, se utilizan para preparar una de las bebidas más consumidas del mundo.</p>
+
+                        <h5 class="plant-subtitle">Características físicas del cafeto</h5>
+                        <ul class="plant-list">
+                            <li>
+                                <span class="plant-label">Tamaño</span>
+                                <span class="plant-value">En plantaciones se poda entre 2-4 metros. En estado silvestre alcanza 10-12 metros.</span>
+                            </li>
+                            <li>
+                                <span class="plant-label">Hojas</span>
+                                <span class="plant-value">Verde intenso, ovaladas y superficie brillante.</span>
+                            </li>
+                            <li>
+                                <span class="plant-label">Floración</span>
+                                <span class="plant-value">Flores blancas aromáticas similares al jazmín.</span>
+                            </li>
+                            <li>
+                                <span class="plant-label">Fruto</span>
+                                <span class="plant-value">"Cereza de café" que tarda ~9 meses en madurar.</span>
+                            </li>
+                            <li>
+                                <span class="plant-label">Cosecha</span>
+                                <span class="plant-value">Manual, seleccionando frutos en punto óptimo.</span>
+                            </li>
+                            <li>
+                                <span class="plant-label">Vida útil</span>
+                                <span class="plant-value">Productivo entre 30 y 50 años.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="section section-methods" id="preparacion">
+        <div class="container">
+            <div class="section-header section-header--center">
+                <span class="section-eyebrow">Guías</span>
+                <h2 class="section-title">Métodos de Preparación</h2>
+                <p class="section-subtitle">Cómo prepararlo — Cada método resalta facetas distintas del café</p>
+            </div>
+
+            <div class="methods-grid">
+                <div class="method-card">
+                    <span class="method-num">01</span>
+                    <div class="method-header">
+                        <span class="method-icon"></span>
+                        <h3 class="method-name">Drip Coffee / Goteo</h3>
+                    </div>
+                    <ul class="method-steps">
+                        <li><span class="step-num">1</span>Usa <strong>Café Molido Fino</strong></li>
+                        <li><span class="step-num">2</span>Proporción: <strong>1:16</strong> (café:agua)</li>
+                        <li><span class="step-num">3</span>Agua a <strong>90-96°C</strong></li>
+                        <li><span class="step-num">4</span>Tiempo: <strong>3-4 minutos</strong></li>
+                        <li><span class="step-num">5</span>Resalta notas <strong>frutales y frescas</strong></li>
+                    </ul>
+                </div>
+
+                <div class="method-card">
+                    <span class="method-num">02</span>
+                    <div class="method-header">
+                        <span class="method-icon"></span>
+                        <h3 class="method-name">French Press</h3>
+                    </div>
+                    <ul class="method-steps">
+                        <li><span class="step-num">1</span>Usa <strong>Café Molido Medio</strong></li>
+                        <li><span class="step-num">2</span>Proporción: <strong>1:15</strong> (café:agua)</li>
+                        <li><span class="step-num">3</span>Agua a <strong>94°C</strong></li>
+                        <li><span class="step-num">4</span>Infusión: <strong>4 minutos</strong></li>
+                        <li><span class="step-num">5</span>Presiona suavemente y sirve</li>
+                    </ul>
+                </div>
+
+                <div class="method-card">
+                    <span class="method-num">03</span>
+                    <div class="method-header">
+                        <span class="method-icon"></span>
+                        <h3 class="method-name">Chemex</h3>
+                    </div>
+                    <ul class="method-steps">
+                        <li><span class="step-num">1</span>Usa <strong>Café Molido Medio</strong></li>
+                        <li><span class="step-num">2</span>Proporción: <strong>1:17</strong> (café:agua)</li>
+                        <li><span class="step-num">3</span>Agua a <strong>90-93°C</strong></li>
+                        <li><span class="step-num">4</span>Goteo: <strong>3.5-4.5 min</strong></li>
+                        <li><span class="step-num">5</span>Equilibrio <strong>cuerpo y fragancia</strong></li>
+                    </ul>
+                </div>
+
+                <div class="method-card">
+                    <span class="method-num">04</span>
+                    <div class="method-header">
+                        <span class="method-icon"></span>
+                        <h3 class="method-name">Espresso</h3>
+                    </div>
+                    <ul class="method-steps">
+                        <li><span class="step-num">1</span>Usa <strong>Café Molido Fino</strong></li>
+                        <li><span class="step-num">2</span>Dosis: <strong>18-20g</strong> por extracción</li>
+                        <li><span class="step-num">3</span>Presión: <strong>9 bares</strong></li>
+                        <li><span class="step-num">4</span>Tiempo: <strong>25-30 segundos</strong></li>
+                        <li><span class="step-num">5</span>Shot <strong>cremoso e intenso</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="section section-storage">
+        <div class="container">
+            <div class="storage-box">
+                <div class="storage-icon">
+                    <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="12" width="32" height="28" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M16 12V8C16 6 18 4 24 4C30 4 32 6 32 8V12" stroke="currentColor" stroke-width="1.5"/><line x1="8" y1="20" x2="40" y2="20" stroke="currentColor" stroke-width="1"/><circle cx="24" cy="30" r="4" stroke="currentColor" stroke-width="1.5"/></svg>
+                </div>
+                <div class="storage-content">
+                    <h3>Método de Conservación</h3>
+                    <p>Guarda tu café en un lugar fresco, seco y oscuro. Una vez abierto, consume dentro de las 4 semanas para disfrutar de su máximo aroma y sabor. Nuestro empaque biodegradable mantiene las propiedades del grano mientras cuida el planeta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="section section-contact" id="contacto">
+        <div class="container">
+            <div class="section-header section-header--center">
+                <span class="section-eyebrow">Escríbenos</span>
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-subtitle">Santa María, Huila · Colombia</p>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <div class="contact-block">
+                        <span class="contact-label">Ubicación</span>
+                        <p class="contact-value">Santa María, Huila<br>Colombia</p>
+                        <a href="https://www.google.com/maps/search/Santa+Mar%C3%ADa,+Huila,+Colombia" target="_blank" class="contact-link">Ver en Google Maps →</a>
+                    </div>
+
+                    <div class="contact-block">
+                        <span class="contact-label">WhatsApp</span>
+                        <a href="https://wa.me/573182703811" target="_blank" class="contact-value contact-value--link">(+57) 318 270 3811</a>
+                        <a href="https://wa.me/573022396917" target="_blank" class="contact-value contact-value--link">(+57) 302 239 6917</a>
+                    </div>
+
+                    <div class="contact-block">
+                        <span class="contact-label">Instagram</span>
+                        <a href="https://instagram.com/cafe_aromas_del_bache" target="_blank" class="contact-value contact-value--link">@cafe_aromas_del_bache</a>
+                    </div>
+
+                    <div class="contact-block contact-block--highlight">
+                        <span class="contact-label"> Envíos</span>
+                        <p class="contact-value">Realizamos envíos a todo Colombia.<br>Escríbenos para coordinar tu pedido.</p>
+                    </div>
+                </div>
+
+                <div class="contact-visual">
+                    <div class="contact-map">
+                        <svg viewBox="0 0 400 300" fill="none" class="map-illustration">
+                            <rect width="400" height="300" fill="#f5f0eb"/>
+                            <path d="M50 150 Q100 100 150 120 T250 100 T350 140" stroke="#c4b5a0" stroke-width="1" fill="none"/>
+                            <path d="M50 180 Q100 140 150 160 T250 130 T350 170" stroke="#c4b5a0" stroke-width="1" fill="none"/>
+                            <path d="M50 210 Q100 170 150 190 T250 160 T350 200" stroke="#c4b5a0" stroke-width="1" fill="none"/>
+                            <circle cx="200" cy="150" r="8" fill="#1a3c27"/>
+                            <circle cx="200" cy="150" r="4" fill="#fff"/>
+                            <text x="200" y="175" text-anchor="middle" font-size="11" fill="#1a3c27" font-family="Montserrat, sans-serif" font-weight="600">Santa María, Huila</text>
+                            <text x="200" y="192" text-anchor="middle" font-size="9" fill="#666" font-family="Montserrat, sans-serif">Municipio cafetero en el corazón del Huila</text>
+                            <text x="200" y="208" text-anchor="middle" font-size="9" fill="#666" font-family="Montserrat, sans-serif">bañado por el río Baché</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="footer-logo-icon"></span>
+                    <span class="footer-logo-text">Café Aromas del Baché</span>
+                </div>
+                <p class="footer-location"> Santa María, Huila · Colombia</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/cafe_aromas_del_bache" target="_blank" aria-label="Instagram">📸 Instagram</a>
+                    <span class="footer-dot">·</span>
+                    <a href="https://wa.me/573182703811" target="_blank" aria-label="WhatsApp">💬 WhatsApp</a>
+                </div>
+                <p class="footer-copy">
+                    © 2025 Café Aromas del Baché · Santa María, Huila · 100% Café Colombiano<br>
+                    <span class="footer-heart"></span> Hecho con amor por la tierra
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
